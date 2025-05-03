@@ -7,7 +7,7 @@ export const PokeCard = ({name, number}) => {
   return (
   <Card className='pokeCard' 
     title={name} 
-    cover={<img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${number+1}.png`} alt="Blastoise" />}
+    cover={<img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${number}.png`} alt="Blastoise" />}
     extra={<StarOutlined/>}
     >
 
