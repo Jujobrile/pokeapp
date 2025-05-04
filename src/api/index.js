@@ -7,4 +7,12 @@ export const getPokemons = () =>{
         .catch((error) => console.error("Error fetching Pokemon data:", error))
 }
 
+export const getPokemonDetails = (pokemon) => {
+    return axios
+        .get(pokemon.url)
+        .then((response) => response.data)
+        .catch((error) => console.error("Error fetching Pokemon details:", error))
+}
+
+
 

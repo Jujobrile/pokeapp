@@ -3,17 +3,14 @@ import { Card } from "antd";
 import Meta from 'antd/lib/card/Meta'
 import './PokeCard.css'
 
-export const PokeCard = ({name, number}) => {
+export const PokeCard = ({name, img, types}) => {
   return (
   <Card className='pokeCard' 
     title={name} 
-    cover={<img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${number}.png`} alt="Blastoise" />}
+    cover={<img src={img} alt={name}/>}
     extra={<StarOutlined/>}
     >
-
-    <Meta
-        description= 'Agua'
-    />
+    <Meta description= {types}/>
   </Card>
   )
 };

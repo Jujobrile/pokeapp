@@ -9,8 +9,8 @@ export const PokeList = ({pokemons}) => {
                 return <PokeCard 
                     name={pokemon.name}
                     key={pokemon.name} 
-                    url = {pokemon.url}
-                    number={pokemons.indexOf(pokemon)}
+                    img={pokemon.sprites.front_default}
+                    types={pokemon.types.map((type) => type.type.name).join(', ')}
                     />
             })}
         </div>
