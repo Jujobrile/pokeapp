@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import "antd/dist/reset.css";
-import { pokemonsReducer } from "./Reducers/Pokemons.js";
+import { pokemonsReducer } from "./reducers/Pokemons.js";
 import { applyMiddleware, legacy_createStore as createStore, compose } from "redux";
 import { Provider } from "react-redux";
 import { logger } from "./middlewares";
